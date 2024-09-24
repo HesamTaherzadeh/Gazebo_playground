@@ -39,7 +39,9 @@
             <geometry>
                 <box size="${body_length} ${body_width} ${body_height}"/>
             </geometry>
-            <material name="blue"/>
+            <material name="bodyTexture">
+                <color rgba="1 1 1 1"/>
+            </material>
         </visual>
         <collision>
             <geometry>

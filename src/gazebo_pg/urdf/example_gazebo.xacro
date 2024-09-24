@@ -21,14 +21,15 @@
     </gazebo>
 
     <gazebo reference="camera_link">
-        <material>Gazebo/Blue</material>
+        <material>Blue</material>
     </gazebo>
 
     <gazebo reference="chasis">
-        <material> 
-          bodyTexture
-        </material> 
+        <material>
+            bodyTexture
+        </material>
     </gazebo>
+
 
     <gazebo reference="left_wheel">
         <material>Gazebo/Black</material>

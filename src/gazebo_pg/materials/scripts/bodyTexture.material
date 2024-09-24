@@ -1,0 +1,14 @@
+material bodyTexture
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/pashmalo.png
+        scale 1 1
+      }
+    }
+  }
+}

@@ -13,29 +13,9 @@ find_package(geometry_msgs REQUIRED)
 add_executable(robot_controller src/robot_control.cpp)
 ament_target_dependencies(robot_controller rclcpp sensor_msgs nav_msgs geometry_msgs)
 
-install(DIRECTORY urdf
+install(
+  DIRECTORY launch materials rviz urdf
   DESTINATION share/${PROJECT_NAME}
 )
-
-install(DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}
-)
-
-
-install(DIRECTORY rviz
-  DESTINATION share/${PROJECT_NAME}
-)
-
-install(DIRECTORY materials
-  DESTINATION share/${PROJECT_NAME}
-)
-
-# install(TARGETS
-#   robot_controller
-#   DESTINATION lib/${PROJECT_NAME})
-
-# install(PROGRAMS
-#   scripts/move_robot.py
-#   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
