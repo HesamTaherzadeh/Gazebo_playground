@@ -1,0 +1,12 @@
+digraph G {
+"odom" -> "chasis"[label=" Broadcaster: default_authority\nAverage rate: 29.615\nBuffer length: 4.93\nMost recent transform: 27.817\nOldest transform: 22.887\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chasis" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chasis" -> "left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 25.615\nBuffer length: 4.958\nMost recent transform: 27.845\nOldest transform: 22.887\n"];
+"chasis" -> "right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 25.615\nBuffer length: 4.958\nMost recent transform: 27.845\nOldest transform: 22.887\n"];
+"chasis" -> "caster_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 4.912\nMost recent transform: 27.845\nOldest transform: 22.933\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1727335984.767868"[ shape=plaintext ] ;
+}->"world";
+}

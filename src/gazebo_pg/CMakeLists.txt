@@ -14,7 +14,7 @@ add_executable(robot_controller src/robot_control.cpp)
 ament_target_dependencies(robot_controller rclcpp sensor_msgs nav_msgs geometry_msgs)
 
 install(
-  DIRECTORY launch materials rviz urdf
+  DIRECTORY launch materials rviz urdf cfg
   DESTINATION share/${PROJECT_NAME}
 )
 
